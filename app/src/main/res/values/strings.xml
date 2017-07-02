@@ -5,4 +5,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
+    <string name="Error">Error </string>
+    <string name="StringText">Widget Header</string>
+    <string name="BtnNext">Next Step</string>
+    <string name="TextRecipe">Name of Recipe</string>
 </resources>

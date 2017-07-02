@@ -6,14 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v7.widget.CardView android:layout_height="wrap_content"
+    <android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
         android:layout_width="match_parent">
 
         <com.google.android.exoplayer2.ui.SimpleExoPlayerView
 
             android:id="@+id/player"
             android:layout_width="match_parent"
-            android:layout_height="634px"
+            android:layout_height="@dimen/PlayerHeight"
             android:focusable="true" >
 
         </com.google.android.exoplayer2.ui.SimpleExoPlayerView>
@@ -31,15 +32,16 @@
 
         app:srcCompat="@android:drawable/ic_menu_set_as" />
 
-    <android.support.v7.widget.CardView android:layout_height="wrap_content"
+    <android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
         android:layout_width="match_parent">
 
         <TextView
             android:id="@+id/stepDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="Name of Recipe"
+            android:layout_margin="@dimen/MarginText"
+            android:text="@string/TextRecipe"
             android:textStyle="bold" />
 
     </android.support.v7.widget.CardView>
@@ -52,6 +54,6 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Next Step" />
+        android:text="@string/BtnNext" />
 
 </LinearLayout>
