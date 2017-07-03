@@ -41,7 +41,6 @@ public class RecipesListFragment extends Fragment {
 
     @BindView(R.id.recyclerView)RecyclerView mRecyclerView;
     @BindView(R.id.swipeRefresh)SwipeRefreshLayout mSwipeRefreshLayout;
-    @BindView(R.id.TextError)TextView mTextError;
     RecipesAdapter recipesAdapter;
     protected RecyclerView.LayoutManager mLayoutManager;
     protected List<Recipe> dataSet;
@@ -158,7 +157,6 @@ public class RecipesListFragment extends Fragment {
             public void onErrorResponse(VolleyError error) {
                 // Stop the refreshing indicator
                 mSwipeRefreshLayout.setRefreshing(false);
-                mTextError.setVisibility(View.VISIBLE);
                 Log.d("response", error.toString());
             }
         });
